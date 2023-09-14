@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Arial';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .form-table {
+            border-collapse: collapse;
+           
+        }
+
+        .form-group {
+            margin-bottom: 13px;
+        }
+
+
+        input, select {
+            width: 100%;
+            margin-left: 7rem;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgba(192,192,192,0.5);
+            border: 1px solid black;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(255,165,0,0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table class="form-table">
+            <tr>
+                <td class="form-group">
+                    <label for="fullName">Full Name:</label>
+                </td>
+                <td class="form-group">
+                    <input type="text" id="fullName" name="fullName" value="Vincent Maverick Durano" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-group">
+                    <label for="username">Username:</label>
+                </td>
+                <td class="form-group">
+                    <input type="text" id="username" name="username" value="Vinz" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-group">
+                    <label for="password">Password:</label>
+                </td>
+                <td class="form-group">
+                    <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-group">
+                    <label for="rePassword">Re Password:</label>
+                </td>
+                <td class="form-group">
+                    <input type="password" id="rePassword" name="rePassword" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-group">
+                    <label for="address">Address:</label>
+                </td>
+                <td class="form-group">
+                    <input type="text" id="address" name="address" value="Cebu, Philippines" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-group">
+                    <label for="age">Age:</label>
+                </td>
+                <td class="form-group">
+                    <input type="number" id="age" name="age" value="22" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-group">
+                    <label for="gender">Gender:</label>
+                </td>
+                <td class="form-group">
+                    <select id="gender" name="gender" required>
+                        <option value="Male" selected>Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit">Save</button>
+    </form>
+</body>
+
+</html>
